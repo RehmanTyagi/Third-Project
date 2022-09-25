@@ -70,6 +70,8 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const mobiMenuBtn = document.querySelector('.mobile-menu__btn');
+const sideBar = document.querySelector('.sidebar');
 
 // Application Architecture
 class App {
@@ -90,6 +92,9 @@ class App {
       'click',
       this._pointLoadedMarker.bind(this)
     );
+    mobiMenuBtn.addEventListener('click', function () {
+      sideBar.classList.toggle('hidden');
+    });
   }
 
   _getPosition() {
