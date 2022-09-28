@@ -150,6 +150,9 @@ a:visited {
   font-size: 1.5rem;
   font-weight: 600;
 }
+.mobile-menu__btn {
+  cursor: pointer;
+}
 
 .form__input {
   width: 100%;
@@ -262,6 +265,10 @@ a:visited {
     visibility: hidden;
   }
 
+  .leaflet-control-zoom {
+    top: 100px;
+  }
+
   .nav__area {
     position: fixed;
     display: flex;
@@ -270,7 +277,7 @@ a:visited {
     padding: 0 2rem;
     background-color: black;
     width: 100%;
-    z-index: 1002;
+    z-index: 1003;
   }
   .nav__area i {
     font-size: 2.5rem;
